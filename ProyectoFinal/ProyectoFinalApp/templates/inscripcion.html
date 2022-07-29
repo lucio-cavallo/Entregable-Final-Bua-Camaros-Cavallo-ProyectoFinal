@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<header class="py-5 bg-image-full" style="background-image: url('https://images.pexels.com/photos/8141951/pexels-photo-8141951.jpeg')">
+<!-- Content section-->
+<section class="py-5">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <p class="lead" style="color:white;">Nuestros cursos, ofrecen un aprendizaje permanente y continuo al observador a traves del lente.</p>
+                <p class="mb-0" style="color:gray;">Con un reconocimiento mundial, nos comprometemos a que no solamente te vayas satisfecho y feliz del curso obtenido, sino tambien con las ganas de volver y trabajar con nosotros!</p>
+                <br></br>
+                <h2 style="color:white;"><u>Cursos:</h2></u>
+                <p></p>
+                <h4 style="color: white;"><b>Ingresa a uno de estos links para obtener mas informacion sobre cada curso.</h4></b>
+                <p></p>
+                <li class="nav-item"><a class="nav-link" href="{% url 'inicial_des' %}">Curso Inicial</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'intermedio_des' %}">Curso Intermedio</a></li>
+                <li class="nav-item"><a class="nav-link" href="{% url 'avanzado_des' %}">Curso Avanzado</a></li>
+            </div>
+        </div>
+    </div>
+</section>       
+
+{% endblock %}
+
+
